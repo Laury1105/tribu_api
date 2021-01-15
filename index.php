@@ -16,7 +16,7 @@ $result =  $requete->fetch();
 $nbResults = (int) $result['nb_results'];
 
 //How many results per page
-$perPage = 5;
+$perPage = 6;
 //How many pages
 $pages = ceil($nbResults / $perPage);
 
@@ -33,4 +33,3 @@ $images["results"]["images"]= $requete->fetchAll();
 
 return_json(true,"Voici la liste des images", $images )
 ?>
-
